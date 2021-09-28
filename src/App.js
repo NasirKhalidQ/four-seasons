@@ -1,10 +1,19 @@
 import "./App.css";
+import NavBar from "./Header";
+import { Route, BrowserRouter, Switch } from "react-router-dom";
+import Landing from "./Landing";
 
 function App() {
   return (
     <>
-      <h1>Hello World</h1>
-      <p>yeye</p>
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/">
+            <NavBar />
+            <Landing />
+          </Route>
+        </Switch>
+      </BrowserRouter>
     </>
   );
 }
