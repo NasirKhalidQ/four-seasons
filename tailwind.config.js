@@ -10,6 +10,7 @@ module.exports = {
       },
       backgroundImage: {
         hero: "url('hero-bg.jpg')",
+        hero2: "url('hero2.png')",
       },
     },
     fontFamily: {
