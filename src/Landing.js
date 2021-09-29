@@ -4,6 +4,7 @@ import Pool from "./logos/Pool";
 import Star from "./logos/Star";
 import Tv from "./logos/Tv";
 import Wifi from "./logos/Wifi";
+import { Link } from "react-router-dom";
 
 function Landing() {
   return (
@@ -170,10 +171,54 @@ function Landing() {
           </div>
         </section>
         <section className="relative bg-seasons-gray">
-          <div className="mx-10 md:mx-40 py-72 text-center text-2xl text-gray-100">
-            <p>Customers Love our Facilities</p>
+          <div className="mx-10 md:mx-40 py-20 md:py-44 text-lg text-gray-200 grid lg:grid-cols-2 gap-y-8">
+            <div className="lg:mr-10">
+              <p className="text-3xl text-gray-100 mb-10">
+                Customers Love our Facilities
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                libero mauris, bibendum eget sapien ac, ultrices rhoncus ipsum.
+                Donec nec sapien in urna fermentum ornare. Morbi vel ultrices
+                leo. Sed eu turpis eu arcu vehicula fringilla ut vitae orci.
+                Suspendisse maximus malesuada.
+              </p>
+              <button
+                type="submit"
+                className="py-4 px-4 mt-10 shadow-md bg-seasons-primary hover:bg-opacity-80 text-white transition duration-500 ease-in-out"
+              >
+                Make a Reservation
+              </button>
+            </div>
+
+            <div className="grid lg:grid-cols-2 gap-8">
+              <img className="w-full" src="./imgs/c1.jpg" alt="" />
+              <img className="w-full" src="./imgs/c2.jpg" alt="" />
+              <img className="w-full" src="./imgs/c3.jpg" alt="" />
+              <img className="w-full" src="./imgs/c4.jpg" alt="" />
+            </div>
           </div>
         </section>
+        <footer className="bg-seasons-gray sm:px-12 pt-6 pb-2 text-gray-500 border-t-2 border-gray-300">
+          <div className="grid grid-cols-5">
+            <div className="inline-flex col-start-1 col-end-3 mt-4">
+              <Link to="/">
+                <img className="mb-5" src="./imgs/logo.svg" alt="logo" />
+              </Link>
+              <p className="ml-5">
+                Dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+            <div className="col-start-5 col-end-6">
+              <h2 className="text-lg text-seasons-primary mb-2">
+                Contact Info
+              </h2>
+              <p className="mb-2">1525 Boring Lane, Los Angeles, CA</p>
+              <p>+1 (603)535-4592</p>
+            </div>
+          </div>
+        </footer>
       </div>
     </>
   );
