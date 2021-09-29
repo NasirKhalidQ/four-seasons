@@ -1,3 +1,9 @@
+import Ac from "./logos/Ac";
+import Parking from "./logos/Parking";
+import Pool from "./logos/Pool";
+import Tv from "./logos/Tv";
+import Wifi from "./logos/Wifi";
+
 function Landing() {
   return (
     <>
@@ -11,8 +17,10 @@ function Landing() {
           <div className="mx-10 md:mx-40 py-72 text-white font-bold">
             <div className="border-8 border-seasons-primary text-left grid md:grid-cols-2 p-10">
               <div className="grid gap-y-8">
-                <h2 className="text-gray-500">A MEMORABLE HOLIDAY</h2>
-                <h1 className="text-3xl">A great stay in a lovely hotel.</h1>
+                <h2 className="text-gray-500 uppercase">A memorable holiday</h2>
+                <h1 className="text-xl md:text-3xl">
+                  A great stay in a lovely hotel.
+                </h1>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -23,7 +31,7 @@ function Landing() {
                   volutpat tellus.
                 </p>
               </div>
-              <div className="mt-28 md:ml-10">
+              <div className="mt-10 md:mt-28 md:ml-10">
                 <p className="mb-10">
                   Dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                   tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
@@ -32,6 +40,63 @@ function Landing() {
                 <button
                   type="submit"
                   className="py-2 w-full px-4 shadow-md bg-seasons-primary hover:bg-opacity-80 text-white transition duration-500 ease-in-out"
+                >
+                  Make a Reservation
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="relative">
+          <div className="grid md:grid-cols-2 text-white">
+            <div className="bg-luxury pb-24">
+              <h2 className="mt-20 ml-20 text-3xl">Luxury Suite Room</h2>
+              <p className="mt-5 ml-20">From PKR 13,000</p>
+              <div className="ml-20 mt-72 flex gap-x-8">
+                <div className="grid grid-flow-row text-center gap-y-2">
+                  <Tv />
+                  <p>TV</p>
+                </div>
+                <div className="grid grid-flow-row text-center gap-y-2">
+                  <Wifi />
+                  <p>WiFi</p>
+                </div>
+                <div className="grid grid-flow-row text-center gap-y-2">
+                  <Ac />
+                  <p>AC</p>
+                </div>
+                <div className="grid grid-flow-row text-center gap-y-2">
+                  <Parking />
+                  <p>Parking</p>
+                </div>
+                <div className="grid grid-flow-row text-center gap-y-2">
+                  <Pool />
+                  <p>Pool</p>
+                </div>
+              </div>
+              <div className="ml-20 mt-5">
+                <button
+                  type="submit"
+                  className="py-4 px-8 shadow-md hover:bg-opacity-20 hover:bg-gray-400 border-2 text-white transition duration-500 ease-in-out"
+                >
+                  Make a Reservation
+                </button>
+              </div>
+            </div>
+            <div className="bg-pool pb-24">
+              <h2 className="mt-20 ml-20 text-3xl">Infinity Pool</h2>
+              <p className="mt-5 ml-20 uppercase">For all our guests</p>
+              <div className="ml-20 mt-72 flex gap-x-8">
+                <div className="grid grid-flow-row text-center gap-y-2"></div>
+                <div className="grid grid-flow-row text-center gap-y-2">
+                  <Pool />
+                  <p>Pool</p>
+                </div>
+              </div>
+              <div className="ml-20 mt-5">
+                <button
+                  type="submit"
+                  className="py-4 px-8 shadow-md hover:bg-opacity-20 hover:bg-gray-400 border-2 text-white transition duration-500 ease-in-out"
                 >
                   Make a Reservation
                 </button>
