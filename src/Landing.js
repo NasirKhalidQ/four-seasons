@@ -14,7 +14,7 @@ function Landing() {
           </div>
         </section>
         <section className="relative bg-hero2">
-          <div className="mx-10 md:mx-40 py-72 text-white font-bold">
+          <div className="mx-10 md:mx-40 pt-44 md:pt-72 pb-44 md:pb-72 text-white font-bold">
             <div className="border-8 border-seasons-primary text-left grid md:grid-cols-2 p-10">
               <div className="grid gap-y-8">
                 <h2 className="text-gray-500 uppercase">A memorable holiday</h2>
@@ -32,7 +32,7 @@ function Landing() {
                 </p>
               </div>
               <div className="mt-10 md:mt-28 md:ml-10">
-                <p className="mb-10">
+                <p className="hidden md:flex mb-10">
                   Dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                   tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
                   suspendisse ultrices gravida. Risus commodo viverra.
@@ -50,9 +50,11 @@ function Landing() {
         <section className="relative">
           <div className="grid md:grid-cols-2 text-white">
             <div className="bg-luxury pb-24">
-              <h2 className="mt-20 ml-20 text-3xl">Luxury Suite Room</h2>
-              <p className="mt-5 ml-20">From PKR 13,000</p>
-              <div className="ml-20 mt-72 flex flex-wrap gap-x-8 gap-y-4">
+              <h2 className="mt-20 ml-8 md:ml-20 text-3xl">
+                Luxury Suite Room
+              </h2>
+              <p className="mt-5 ml-8 md:ml-20">From PKR 13,000</p>
+              <div className="ml-8 md:ml-20 mt-72 flex flex-wrap gap-x-8 gap-y-4">
                 <div className="grid grid-flow-row text-center gap-y-2">
                   <Tv />
                   <p>TV</p>
@@ -74,7 +76,7 @@ function Landing() {
                   <p>Pool</p>
                 </div>
               </div>
-              <div className="ml-20 mt-5">
+              <div className="ml-8 md:ml-20 mt-5">
                 <button
                   type="submit"
                   className="py-4 px-8 shadow-md hover:bg-opacity-20 hover:bg-gray-400 border-2 text-white transition duration-500 ease-in-out"
@@ -84,16 +86,16 @@ function Landing() {
               </div>
             </div>
             <div className="bg-pool pb-24">
-              <h2 className="mt-20 ml-20 text-3xl">Infinity Pool</h2>
-              <p className="mt-5 ml-20 uppercase">For all our guests</p>
-              <div className="ml-20 mt-72 flex gap-x-8">
+              <h2 className="mt-20 ml-8 md:ml-20 text-3xl">Infinity Pool</h2>
+              <p className="mt-5 ml-8 md:ml-20 uppercase">For all our guests</p>
+              <div className="ml-8 md:ml-20 mt-72 flex gap-x-8">
                 <div className="grid grid-flow-row text-center gap-y-2"></div>
                 <div className="grid grid-flow-row text-center gap-y-2">
                   <Pool />
                   <p>Pool</p>
                 </div>
               </div>
-              <div className="ml-20 mt-5">
+              <div className="ml-8 md:ml-20 mt-5">
                 <button
                   type="submit"
                   className="py-4 px-8 shadow-md hover:bg-opacity-20 hover:bg-gray-400 border-2 text-white transition duration-500 ease-in-out"
