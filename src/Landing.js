@@ -52,7 +52,7 @@ function Landing() {
             <div className="bg-luxury pb-24">
               <h2 className="mt-20 ml-20 text-3xl">Luxury Suite Room</h2>
               <p className="mt-5 ml-20">From PKR 13,000</p>
-              <div className="ml-20 mt-72 flex gap-x-8">
+              <div className="ml-20 mt-72 flex flex-wrap gap-x-8 gap-y-4">
                 <div className="grid grid-flow-row text-center gap-y-2">
                   <Tv />
                   <p>TV</p>
