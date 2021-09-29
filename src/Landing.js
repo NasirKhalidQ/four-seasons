@@ -158,6 +158,22 @@ function Landing() {
             </div>
           </div>
         </section>
+        <section className="relative bg-video pt-20 pb-20">
+          <div className="grid justify-center text-gray-100 text-5xl md:text-7xl font-bold">
+            <iframe
+              className="w-screen md:max-w-screen-lg"
+              title="Hotel video"
+              width="1000"
+              height="500"
+              src="https://www.youtube.com/embed/tgbNymZ7vqY"
+            ></iframe>
+          </div>
+        </section>
+        <section className="relative bg-seasons-gray">
+          <div className="mx-10 md:mx-40 py-72 text-center text-2xl text-gray-100">
+            <p>Customers Love our Facilities</p>
+          </div>
+        </section>
       </div>
     </>
   );

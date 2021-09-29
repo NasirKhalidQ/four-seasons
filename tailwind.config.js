@@ -13,6 +13,7 @@ module.exports = {
         hero2: "url('hero2.png')",
         luxury: "url('luxury.jpg')",
         pool: "url('pool.jpg')",
+        video: "url('bg-video.jpg')",
       },
     },
     fontFamily: {
